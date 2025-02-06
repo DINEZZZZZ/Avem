@@ -4,7 +4,7 @@ import java.util.List;
 
 public class KitData {
 
-    private long timestamp;
+    private String timestamp;
     private String location;
     private String temperature;
     private String gasLeakageStatus;
@@ -12,7 +12,7 @@ public class KitData {
     private List<String> cameraFootage;
 
     // Constructor
-    public KitData(long timestamp, String location, String temperature, String gasLeakageStatus,
+    public KitData(String timestamp, String location, String temperature, String gasLeakageStatus,
                    String crashStatus, List<String> cameraFootage) {
         this.timestamp = timestamp;
         this.location = location;
@@ -23,11 +23,11 @@ public class KitData {
     }
 
     // Getters and Setters
-    public long getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(long timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

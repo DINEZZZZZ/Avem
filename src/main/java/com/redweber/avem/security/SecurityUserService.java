@@ -14,4 +14,3 @@ public class SecurityUserService {
         return user.isPresent() && user.get().getPassword().equals(password);
     }
 }
-
