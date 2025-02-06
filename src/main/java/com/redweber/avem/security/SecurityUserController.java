@@ -1,12 +1,11 @@
 package com.redweber.avem.security;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/auth")
-
 public class SecurityUserController {
 
     @Autowired
@@ -21,5 +20,3 @@ public class SecurityUserController {
         }
     }
 }
-
-
